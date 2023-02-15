@@ -1,3 +1,23 @@
+/*DEBUG*/
+.debug .ms_h-100px {
+    height: 100px;
+}
+.debug .ms_box {
+    border: dashed 1px red;
+}
+.debug #ms_aside {
+    background-color: brown;
+}
+
+
+
+
+
+
+/*CSS*/
+.ms_border {
+    border: 1px solid black;
+}
 header {
     height: 70px;
     background-color: gray;
@@ -7,12 +27,34 @@ header {
     width: 100%;
 }
 
+
 main {
     height: calc(100vh - 70px);
     background-color: aqua;
     margin-top: 70px;
 }
+.ms_main-top {
+    flex-direction: column;
+}
+#ms_content::-webkit-scrollbar {
+    display: none;
+}
 
-.ms_border {
-    border: 1px solid black;
+
+
+
+
+
+
+
+/*MEDIAQUERY*/
+
+/*tablet*/
+@media all and (min-width: 768px) {
+    .ms_main-top {
+        flex-direction: row;
+    }
+    .ms_main-top .ms_new-student {
+        order: 2;
+    }
 }
