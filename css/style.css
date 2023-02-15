@@ -6,7 +6,8 @@
     border: dashed 1px red;
 }
 .debug #ms_aside {
-    background-color: brown;
+    background-color: var(--darkBlueColor);
+    background-image: url(../img/sidebar-bg.png);
 }
 
 
@@ -17,9 +18,17 @@
 /*CSS*/
 
 /*utility*/
+
+:root {
+    --darkBlueColor: #051e34;
+    --BlueColor: #1a6edf;
+}
+
 .ms_border {
     border: 1px solid black;
 }
+
+
 
 
 /*rules*/
@@ -33,6 +42,9 @@ header {
 }
 #ms_sidebar-top {
     height: calc(100% - 50px);
+}
+#ms_sidebar-top::-webkit-scrollbar {
+    display: none;
 }
 #ms_sidebar-bottom {
     height: 50px;
