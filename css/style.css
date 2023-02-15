@@ -15,9 +15,14 @@
 
 
 /*CSS*/
+
+/*utility*/
 .ms_border {
     border: 1px solid black;
 }
+
+
+/*rules*/
 header {
     height: 70px;
     background-color: gray;
@@ -26,14 +31,24 @@ header {
     left: 0;
     width: 100%;
 }
-
-
+#ms_sidebar-top {
+    height: calc(100% - 50px);
+}
+#ms_sidebar-bottom {
+    height: 50px;
+}
+.ms_text {
+    font-size: 1rem;
+    vertical-align: middle;
+    padding-left: 5px;
+    display: none;
+}
 main {
     height: calc(100vh - 70px);
     background-color: aqua;
     margin-top: 70px;
 }
-.ms_main-top {
+#ms_main-top {
     flex-direction: column;
 }
 #ms_content::-webkit-scrollbar {
@@ -51,10 +66,10 @@ main {
 
 /*tablet*/
 @media all and (min-width: 768px) {
-    .ms_main-top {
+    #ms_main-top {
         flex-direction: row;
     }
-    .ms_main-top .ms_new-student {
+    #ms_main-top .ms_new-student {
         order: 2;
     }
 }
