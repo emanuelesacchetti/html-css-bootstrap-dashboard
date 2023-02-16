@@ -43,6 +43,10 @@ header {
 #ms_sidebar-top {
     height: calc(100% - 50px);
 }
+#ms_sidebar-top .row {
+    height: 40px;
+    line-height: 40px
+}
 #ms_sidebar-top::-webkit-scrollbar {
     display: none;
 }
@@ -87,7 +91,7 @@ i.fa-solid.fa-bell{
     color: white;
 }
 .offcanvas.offcanvas-end {
-    width: 600px;
+    width: 100%;
 }
 #ms_main-bottom {
     background-color: var(--WhiteColor);
@@ -107,6 +111,12 @@ i.fa-solid.fa-bell{
 }
 .ms_change-display {
     display: none;
+}
+
+
+/*HOVER*/
+#ms_sidebar-top .row:hover div {
+    background-color: rgba(229, 229, 229, 0.8);
 }
 
 
@@ -131,4 +141,9 @@ i.fa-solid.fa-bell{
     .ms_change-display {
         display: inline-block;
     }
+    .offcanvas.offcanvas-end {
+        width: 600px;
+    }
 }
+
+
