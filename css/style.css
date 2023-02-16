@@ -120,6 +120,9 @@ i.fa-solid.fa-bell{
     color: white;
     background-color: #0559a3;
 }
+.nav-breadcrumb {
+    --bs-breadcrumb-divider: '\000BB';
+}
 
 
 
