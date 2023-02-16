@@ -22,6 +22,7 @@
 :root {
     --darkBlueColor: #051e34;
     --BlueColor: #1a6edf;
+    --SearchBarColor: #e5e5e5;
 }
 
 .ms_border {
@@ -57,16 +58,35 @@ header {
 }
 main {
     height: calc(100vh - 70px);
-    background-color: aqua;
+    background-color: var(--BlueColor);
     margin-top: 70px;
 }
 #ms_main-top {
     flex-direction: column;
 }
+
 #ms_content::-webkit-scrollbar {
     display: none;
 }
+.ms_logo {
+    width: 45px;
+}
+.dropdown-toggle::after {
+    display: none;
+}
 
+i.fa-solid.fa-bell{
+    color: #fb8d00;
+}
+.ms_search {
+    border: var(--bs-border-width) solid var(--bs-border-color);
+}
+.ms_bg-search {
+    background-color: var(--SearchBarColor);
+}
+.breadcrumb-item+.ms_no-divider::before {
+    display: none;
+}
 
 
 
@@ -78,10 +98,11 @@ main {
 
 /*tablet*/
 @media all and (min-width: 768px) {
-    #ms_main-top {
-        flex-direction: row;
-    }
+    
     #ms_main-top .ms_new-student {
         order: 2;
+    }
+    #ms_main-top {
+        flex-direction: row;
     }
 }
