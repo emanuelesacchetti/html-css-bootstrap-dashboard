@@ -112,6 +112,16 @@ i.fa-solid.fa-bell{
 .ms_change-display {
     display: none;
 }
+#ms_main-top-sx nav li a {
+    color: white;
+    background-color: #0559a3;
+}
+#ms_main-top-sx span a {
+    color: white;
+    background-color: #0559a3;
+}
+
+
 
 
 /*HOVER*/
