@@ -97,60 +97,232 @@
 
                 <div class="col-10 h-100 ms_border ms_h-100px overflow-scroll" id="ms_content">
                     
-                        <div class="row flex w-100" id="ms_main-top">
-                            <div class="col-12 col-md-4 col-lg-3 ms_border ms_new-student">
-                                <div class="ms_box">
-                                    <span>nuovo studente</span>
+                        <div class="row flex text-white" id="ms_main-top">
+                            <div class="col-12 col-md-4 col-lg-3 ms_new-student">
+                                <div class="p-3">
+                                    <span>Nuovo studente</span>
                                     <span>
-                                        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                        <a class="btn btn-primary bg-transparent border-white" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                                             <i class="fa-solid fa-plus"></i>
                                         </a>
+                                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                            <div class="offcanvas-header">
+                                              <h5 class="offcanvas-title  fw-semibold" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
+                                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <form class="row g-3">
+                                                    <div class="col-md-6">
+                                                        <label for="name" class="form-label fw-semibold">Nome</label>
+                                                        <input type="text" class="form-control" id="name">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="surname" class="form-label fw-semibold">Cognome</label>
+                                                        <input type="text" class="form-control" id="surname">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="inputEmail4" class="form-label fw-semibold">Email</label>
+                                                        <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-text">@</div>
+                                                        <input type="text" class="form-control" id="autoSizingInputGroup">
+                                                    </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                      <label for="inputPassword4" class="form-label fw-semibold">Password</label>
+                                                      <input type="password" class="form-control" id="inputPassword4">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="inputEmail4" class="form-label fw-semibold">Indirizzo Email</label>
+                                                        <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-text">@</div>
+                                                        <input type="text" class="form-control" id="autoSizingInputGroup">
+                                                    </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="inputPassword4" class="form-label fw-semibold">Password</label>
+                                                        <input type="password" class="form-control" id="inputPassword4">
+                                                      </div>
+                                                    <div class="col-12">
+                                                      <label for="inputAddress" class="form-label fw-semibold">Address</label>
+                                                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                      <label for="inputCity" class="form-label fw-semibold">City</label>
+                                                      <input type="text" class="form-control" id="inputCity">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                      <label for="inputState" class="form-label fw-semibold">State</label>
+                                                      <select id="inputState" class="form-select">
+                                                        <option selected>Choose...</option>
+                                                        <option>...</option>
+                                                      </select>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                      <label for="inputZip" class="form-label fw-semibold">Cap</label>
+                                                      <input type="text" class="form-control" id="inputZip">
+                                                    </div>
+                                                    <div class="col-12 mb-3">
+                                                        <label for="formFile" class="form-label fw-semibold">Foto</label>
+                                                        <input class="form-control" type="file" id="formFile">
+                                                      </div>
+                                                    <div class="col-12">
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                        <label class="form-check-label" for="gridCheck">
+                                                          Seleziona per proseguire
+                                                        </label>
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                      <button type="submit" class="btn btn-primary">Salva</button>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <button type="submit" class="btn btn-warning">Svuota</button>
+                                                      </div>
+                                                  </form>
+                                            </div>
+                                          </div>
                                     </span>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-4 col-lg-6 ms_border">
-                                <div class="ms_box">
+                            <div class="col-12 col-md-4 col-lg-5">
+                                <div class="p-3">
                                     <div>
                                         <span class="fs-3">Boolean</span>
-                                        <span class="badge rounded-pill text-bg-primary">Primary</span>
+                                        <span class="badge rounded-pill text-bg-primary opacity-75">Piano blaze</span>
                                     </div>
                                     <div>
                                         <nav style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
                                             <ol class="breadcrumb">
-                                              <li class="breadcrumb-item"><a href="#" class="badge rounded-pill text-bg-primary text-decoration-none">3 app</a></li>
-                                              <li class="breadcrumb-item"><a href="#" class="badge rounded-pill text-bg-primary text-decoration-none">Boolean mobile app</a></li>
-                                              <li class="breadcrumb-item ms_no-divider"><a href="#" class="text-decoration-none badge rounded-pill text-bg-primary">Boolean web app</a></li>
-                                              <li class="breadcrumb-item ms_no-divider badge rounded-pill text-bg-primary text-decoration-none" aria-current="page">Boolean blog app</li>
-
+                                              <li class="breadcrumb-item"><a href="#" class="badge rounded-pill text-bg-primary text-decoration-none bg-black">3 app</a></li>
+                                              <li class="breadcrumb-item d-lg-none"><a href="#" class="badge rounded-pill text-bg-primary text-decoration-none bg-black"><i class="fa-solid fa-plus"></i></a></li>
+                                              <li class="breadcrumb-item d-none d-lg-block"><a href="#" class="badge rounded-pill text-bg-primary text-decoration-none bg-black">Boolean mobile app</a></li>
+                                              <li class="breadcrumb-item ms_no-divider d-none d-lg-block"><a href="#" class="text-decoration-none badge rounded-pill text-bg-primary bg-black">Boolean web app</a></li>
+                                              <li class="breadcrumb-item ms_no-divider d-none d-lg-block"><a href="#" class="text-decoration-none badge rounded-pill text-bg-primary bg-black">Boolean blog app</a></li>
                                             </ol>
                                           </nav>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-4 col-lg-3 ms_border">
-                                <div class="ms_box">
-                                    <div>studenti negli ultimi 30 minuti</div>
-                                    <div>30</div>
+                            <div class="col-12 col-md-4 col-lg-4">
+                                <div class="p-4">
+                                    <div>Studenti online negli ultimi 30 minuti</div>
+                                    <div class="fs-2 fw-semibold">30</div>
                                 </div>
                             </div>
                         </div>
 
 
 
-                        <div class="row h-100" id="ms_main-bottom">
+                        <div class="row" id="ms_main-bottom">
                             <div class="col-12 col-md-8 bg-black ms_box">
                                 <div class="ms_box">
-
+                                   
                                     <div class="card my-4">
                                         <div class="card-header">
                                           Prossime classi
                                         </div>
-                                        <div class="card-body">
-                                          
-                                        </div>
+                                        <table class="table">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">Nome</th>
+                                                <th scope="col">Data inizio</th>
+                                                <th scope="col">ROI</th>
+                                                <th scope="col">Stato</th>
+                                                <th scope="col">Azioni</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td>Classe 75</td>
+                                                <td>16 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-success">Done</button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                                                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>Classe 76</td>
+                                                <td>17 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-success">Done</button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                                                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>Classe 77</td>
+                                                <td>18 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-warning">Process</button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                                                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>Classe 78</td>
+                                                <td>19 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-success">Done</button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                                                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>Classe 79</td>
+                                                <td>20 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-danger">Failed</button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                                                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>Classe 80</td>
+                                                <td>21 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-success">Done</button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                                                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>Classe 81</td>
+                                                <td>22 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-danger">Failed</button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                                                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
                                         
                                     </div>
-
                                     <div class="card my-4">
                                         <div class="card-header">
                                           Prossime classi
@@ -162,6 +334,9 @@
                                     </div>
                                 </div>
                             </div>
+
+                            
+
                             <div class="col-12 col-md-4 bg-white ms_box">
                                 <div class="ms_box">
 

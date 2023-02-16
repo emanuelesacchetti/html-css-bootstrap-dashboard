@@ -85,7 +85,12 @@ i.fa-solid.fa-bell{
 .breadcrumb-item+.ms_no-divider::before {
     display: none;
 }
-
+.breadcrumb-item+.breadcrumb-item::before {
+    color: white;
+}
+.offcanvas.offcanvas-end {
+    width: 600px;
+}
 
 
 
