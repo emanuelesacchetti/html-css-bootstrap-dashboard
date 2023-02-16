@@ -21,6 +21,7 @@
     --darkBlueColor: #051e34;
     --BlueColor: #1a6edf;
     --SearchBarColor: #e5e5e5;
+    --WhiteColor: #f8f8f8;
 }
 
 .ms_border {
@@ -59,9 +60,6 @@ main {
     background-color: var(--BlueColor);
     margin-top: 70px;
 }
-#ms_main-top {
-    
-}
 
 #ms_content::-webkit-scrollbar {
     display: none;
@@ -91,9 +89,25 @@ i.fa-solid.fa-bell{
 .offcanvas.offcanvas-end {
     width: 600px;
 }
-
-
-
+#ms_main-bottom {
+    background-color: var(--WhiteColor);
+}
+#ms_main-bottom tr th:first-child {
+    width: 30%;
+    text-align: left;
+}
+#ms_main-bottom tr td:first-child {
+    width: 30%;
+    text-align: left;
+}
+#ms_main-bottom tr img {
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.ms_change-display {
+    display: none;
+}
 
 
 
@@ -110,5 +124,11 @@ i.fa-solid.fa-bell{
     }
     .ms_h-100px {
         height: 100px;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .ms_change-display {
+        display: inline-block;
     }
 }
