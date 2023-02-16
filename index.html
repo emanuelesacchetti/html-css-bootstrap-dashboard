@@ -95,14 +95,21 @@
 
 
 
-                <div class="col-10 h-100 ms_border overflow-scroll" id="ms_content">
+                <div class="col-10 h-100 ms_border ms_h-100px overflow-scroll" id="ms_content">
                     
-                        <div class="row flex ms_h-100px w-100" id="ms_main-top">
+                        <div class="row flex w-100" id="ms_main-top">
                             <div class="col-12 col-md-4 col-lg-3 ms_border ms_new-student">
-                                <div class="ms_box h-100">nuovo studente +</div>
+                                <div class="ms_box">
+                                    <span>nuovo studente</span>
+                                    <span>
+                                        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </a>
+                                    </span>
+                                </div>
                             </div>
                             <div class="col-12 col-md-4 col-lg-6 ms_border">
-                                <div class="ms_box h-100">
+                                <div class="ms_box">
                                     <div>
                                         <span class="fs-3">Boolean</span>
                                         <span class="badge rounded-pill text-bg-primary">Primary</span>
@@ -121,7 +128,10 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-4 col-lg-3 ms_border">
-                                <div class="ms_box h-100">studenti</div>
+                                <div class="ms_box">
+                                    <div>studenti negli ultimi 30 minuti</div>
+                                    <div>30</div>
+                                </div>
                             </div>
                         </div>
 

@@ -1,7 +1,5 @@
 /*DEBUG*/
-.debug .ms_h-100px {
-    height: 100px;
-}
+
 .debug .ms_box {
     border: dashed 1px red;
 }
@@ -62,7 +60,7 @@ main {
     margin-top: 70px;
 }
 #ms_main-top {
-    flex-direction: column;
+    
 }
 
 #ms_content::-webkit-scrollbar {
@@ -104,5 +102,8 @@ i.fa-solid.fa-bell{
     }
     #ms_main-top {
         flex-direction: row;
+    }
+    .ms_h-100px {
+        height: 100px;
     }
 }
